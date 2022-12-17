@@ -6,13 +6,12 @@ for i in range(10): # Формируем последовательность ч
     a = randint(1, 10)
     lst_a.append(a)
 
-lst_b = lst_a.copy()
 lst_x = list()
 
-for i in range(len(lst_b)):
-    x = lst_b.pop(0)
-    if x not in lst_b:
-        lst_x.append(x)
+for i in range(len(lst_a)): #удаляем элемент из списка и проверяем, есть ли повторяющийся
+    x = lst_a.count(lst_a[i])
+    if x <= 1:
+        lst_x.append(lst_a[i])
 
 
 print(f"Заданный список: {lst_a}")
