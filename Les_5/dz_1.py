@@ -1,4 +1,5 @@
-f = open('C:\Repo\Python\Les_5\dz_1.py', 'r')
+f = open("red.txt")
+data = f.read()
+f.close
 
-
-print(f)
+print(data)
