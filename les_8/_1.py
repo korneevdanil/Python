@@ -29,7 +29,7 @@ def choose_action():
 def read_csv():
     data = []
     fields = ['Фамилия', 'Имя', 'Телефон', 'Описание']
-    with open(path, 'r',) as fin:
+    with open(path, 'r', encoding = 'utf8') as fin:
         for line in fin:
             record = dict(zip(fields, line.strip().split()))
             data.append(record)
