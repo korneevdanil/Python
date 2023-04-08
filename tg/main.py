@@ -4,9 +4,9 @@ import json
 import sys
 
 
-API_KEY = 
-API_HASH = 
-PHONE_NUMBER = 
+API_KEY = 26755210
+API_HASH = '1d78f344dacf67adaa17bb5005444cc9'
+PHONE_NUMBER = '+79515561854'
 
 # load shared library
 tdjson_path = find_library("tdjson") or "tdjson.dll"
